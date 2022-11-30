@@ -302,6 +302,7 @@ async function buildDB() {
     await createInitialProducts();
     await createInitialCategories();
     await createInitialAddress();
+    client.end();
   }
   catch (error) {
     console.log('Error building the DB')
@@ -412,5 +413,5 @@ console.log('Finished')
 
 
 buildDB()  
-  .catch(console.error)
-  .finally(() => client.end())
+  // .catch(console.error)
+  // .finally(() => client.end())
