@@ -305,6 +305,7 @@ async function buildDB() {
     await createInitialCategories();
     await createInitialAddress();
     client.end();
+    console.log('Ended connection')
   }
   catch (error) {
     console.log('Error building the DB')
