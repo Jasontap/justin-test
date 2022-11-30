@@ -285,6 +285,8 @@ async function createInitialAddress() {
 
     });
     console.log("Admin Address", adminAddress)
+    console.log("WORK PLEASE!")
+    return;
   }
   catch (error) {
     console.log("Error creating address")
